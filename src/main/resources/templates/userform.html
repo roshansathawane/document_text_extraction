@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Form</title>
+</head>
+<body>
+
+<h2>User Form</h2>
+
+<form action="/api/saveUser" method="post" th:object="${UserMast}">
+
+<label for="user_code">user_code</label>
+    <input type="text" id="user_code" name="user_code"><br>
+
+    <label for="loginId">Login ID:</label>
+    <input type="text" id="loginId" name="login_id" th:field="*{login_id}"><br>
+
+    <label for="loginPwd">Login Password:</label>
+    <input type="password" id="loginPwd" name="login_pwd" th:field="*{login_pwd}"><br>
+
+    <button type="submit">Save</button>
+</form>
+
+<script type="text/javascript" src="/static/js/login.js"></script>  
+</body>
+</html>
