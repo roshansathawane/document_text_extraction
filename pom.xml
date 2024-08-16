@@ -12,7 +12,7 @@
 	<groupId>com.apacheTIKAandPOI</groupId>
 	<artifactId>PDFTextExtract</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>PDFTextExtract</name>
 	<description>apache tika project </description>
 	
